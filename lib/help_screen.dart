@@ -15,7 +15,7 @@ class _HelpScreenState extends State<HelpScreen> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 5), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LocationForm()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
     });
   }
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class _HelpScreenState extends State<HelpScreen> {
               right: 40,
               child: GestureDetector(
                 onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LocationForm()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
                 },
                 child: Container(
                   height: 50,
